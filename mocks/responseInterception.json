@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Playwright",
+                "last": "user"
+            },
+            "location": {
+                "street": {
+                    "number": 8780,
+                    "name": "E Center St"
+                },
+                "city": "Pasadena",
+                "state": "Texas",
+                "country": "United States",
+                "postcode": 19835,
+                "coordinates": {
+                    "latitude": "-61.4134",
+                    "longitude": "-101.1994"
+                },
+                "timezone": {
+                    "offset": "+4:00",
+                    "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+                }
+            },
+            "email": "gavin.stanley@example.com",
+            "login": {
+                "uuid": "5dae2ad1-6f98-4406-80d0-8cc2b930151e",
+                "username": "ticklishbear557",
+                "password": "987654321",
+                "salt": "y9KHqbAr",
+                "md5": "2119e7d754ad5be64228603c9fe34acc",
+                "sha1": "49c0a850658319d5a5b828690f306523b2eef70d",
+                "sha256": "1e7ef78bfe2ec9ddcbf7a3b8f22af0fcab75d54521cf4d6cfa9ffea83119667a"
+            },
+            "dob": {
+                "date": "1988-01-22T11:27:34.824Z",
+                "age": 38
+            },
+            "registered": {
+                "date": "2017-12-20T05:59:31.797Z",
+                "age": 8
+            },
+            "phone": "(752) 203-0801",
+            "cell": "(860) 240-2418",
+            "id": {
+                "name": "SSN",
+                "value": "023-97-8266"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/17.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/17.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/17.jpg"
+            },
+            "nat": "US"
+        }
+    ],
+    "info": {
+        "seed": "f8752284b6565d7f",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}

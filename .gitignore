@@ -1,0 +1,17 @@
+# Environment variables
+.env
+.env.*
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+# Authentication
+storageState.json
+# Allure reports
+allure-results/
+allure-report/
+my-report/
+# Test results
+test-results.json
+# Dependencies
+node_modules/
