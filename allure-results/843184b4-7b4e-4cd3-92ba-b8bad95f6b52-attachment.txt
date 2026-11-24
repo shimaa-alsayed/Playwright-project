@@ -1,0 +1,4 @@
+this actions run before all tests
+start test ${testinfo.title}
+finish test ${testinfo.title}
+this actions run after all tests

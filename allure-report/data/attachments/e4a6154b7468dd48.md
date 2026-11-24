@@ -1,0 +1,267 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: FirstScript.spec.ts >> login test >> Invaild login
+- Location: tests\FirstScript.spec.ts:17:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - paragraph [ref=e3]:
+    - link "PMP Practice" [ref=e4]:
+      - /url: https://pmp.expandtesting.com/
+    - text: "| Free PMP Certification Mock Exam Test +900 Questions & Quizzes"
+    - link "Try Cloud Tools" [ref=e5] [cursor=pointer]
+  - banner [ref=e10]:
+    - navigation "Main navigation" [ref=e11]:
+      - link "SUT" [ref=e12]:
+        - /url: /
+        - 'img "Best Website for Practice Automation Testing: Free UI and REST API Examples and Apps. Using Cypress, Playwright, Selenium, WebdriverIO and Postman." [ref=e13]'
+        - text: Practice
+      - generic [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - button "Demos" [ref=e17] [cursor=pointer]
+          - listitem [ref=e18]:
+            - link "Tools" [ref=e19]:
+              - /url: /#tools
+          - listitem [ref=e20]:
+            - link "Tips" [ref=e21]:
+              - /url: /tips
+          - listitem [ref=e22]:
+            - link "Test Cases" [ref=e23]:
+              - /url: /test-cases
+          - listitem [ref=e24]:
+            - link "API Testing" [ref=e25]:
+              - /url: /notes/api/api-docs/
+          - listitem [ref=e26]:
+            - link "About" [ref=e27]:
+              - /url: /about
+        - list
+        - link "Free ISTQB Mock Exams" [ref=e28] [cursor=pointer]:
+          - /url: https://istqb.expandtesting.com/
+  - main [ref=e29]:
+    - insertion [ref=e33]:
+      - iframe [ref=e35]:
+        - generic [ref=f3e1]:
+          - generic [ref=f3e7]:
+            - generic [ref=f3e8]:
+              - generic "المنيع" [ref=f3e9]:
+                - link "عرض 1+1 مجانا على التطبيق" [ref=f3e11] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CKVYSb7Pnau21Nqio8cAP__a7qA6ll8nRigGxyJPWyxaIlPiHswIQASCVlJmjAWCrzfOF8B6gAYCznvgCyAEBqAMByAPLBKoEjgJP0HczpqiQDjEPr-XzVaqRncLfAY8ZX2DMBXqTW-4fc7BxMhbhJzkPbzcBGVDWd_PwZQiJQoGDt8m4aSLE5aCEp2a4UbzpE4gZW8KQ3PPC30Y0ZjntYzh0XPNh09m5_77jGb4xkYQKylQCM6KlgB_lLvefdUHJlwritpHh253DoKBfct8A5DzTeONZ8Gw6Znxgvm0l2Bw0s0VR91YMu9teJARz_LrsJddYVJG8PBG7-Gv7KQGA3-V8gL0A0rUNXoiZJlWp1NwAGrz2sgQXzICiIyCN5Hetffv9Sp65QyV6zP5BwcCWc3U1GyM3RlaEeh3c-uysFmzBjq2kRFhaY1-i89bXCoaHl3FKfkZMouLABJHrs46mBYgFx5i8rVSAB-jM4YcBqAep67ECqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggyCIBhEAEYHzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WNvM983f55cDYAGxCZsAgyGRhPUvgAoBmAsByAsBogxEKgYKBPbysQJiFAoSY29tLmFsbWFuZWEuaW9zLnNhahwKGmNvbS5hbG1hbmVhLmlvcy5zYS5hbG1hbmVheAGIAQGQAQGqDQJTQcgNAeoNEwjirPjN3-eXAxUoVBwCHX_7DuWIDgnYEwOIFAPQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo0OTcwMjEyMjIxUAa6FwI4AaoYFwkAAAAAQOP3QBIKNDk3MDIxMjIyMRgBshgJEgKsURgBIgEA0BgB6BgBshkBN8IZAggB&gclid=EAIaIQobChMIran4zd_nlwMVKFQcAh1_-w7lEAEYASAAEgIMyfD_BwE&num=1&cid=CAQSnwIAQM4h3NeLaIYFeoYOKPGWL2FogYjSFlVAGzMNOBxmB2lJcbkUxT4xIc9SN2MoZdyRVCwZMYbGV6cRSoyOgHYm8Yf06wdA4T7cP5FzsVkT-Dckylx6PrpfM941jxbyIaGRjzDNKBI8ZHPjMDcpcTXIpzkwiizSJQXr0NmeBB3U-Ttg065motndFfnbQkTd_ifuaUy-i4HtZT9YtmBHmyAZvS6qDcbJCEmYT3wK2q-2xUppTzZaK0L9x9l3qAz7PehgvLd24ZyvECn_F_4daR4VjMOlgYXXeLsHrVdMvlGnhhuloca7Yu-APyCyAxeS-OGZmMfuHMsaP53rzhJTGUfyj7bWY9j3VMO0g8oW3N06hU08d9QE7PjZ4f72V3ThcxgB&sig=AOD64_06QAJMpQtcpepVhuUnW2ulnWimjA&rf=1&nb=0&adurl=https://www.almanea.sa/mega-sale-c-7665%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DAcquisit_Almanea_GDN_loc-SA_lan-AR_Central_Web%26utm_content%3DAcquisit_Almanea_GDN_loc-SA_lan-AR_Central_Web%26utm_term%3D%26gad_source%3D5%26gad_campaignid%3D22643936327
+              - link "الآن على التطبيق فقط! اشترِ جهازك المفضل واحصل على الثاني مجاناً على أصناف مختارة اليوم" [ref=f3e13] [cursor=pointer]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CKVYSb7Pnau21Nqio8cAP__a7qA6ll8nRigGxyJPWyxaIlPiHswIQASCVlJmjAWCrzfOF8B6gAYCznvgCyAEBqAMByAPLBKoEjgJP0HczpqiQDjEPr-XzVaqRncLfAY8ZX2DMBXqTW-4fc7BxMhbhJzkPbzcBGVDWd_PwZQiJQoGDt8m4aSLE5aCEp2a4UbzpE4gZW8KQ3PPC30Y0ZjntYzh0XPNh09m5_77jGb4xkYQKylQCM6KlgB_lLvefdUHJlwritpHh253DoKBfct8A5DzTeONZ8Gw6Znxgvm0l2Bw0s0VR91YMu9teJARz_LrsJddYVJG8PBG7-Gv7KQGA3-V8gL0A0rUNXoiZJlWp1NwAGrz2sgQXzICiIyCN5Hetffv9Sp65QyV6zP5BwcCWc3U1GyM3RlaEeh3c-uysFmzBjq2kRFhaY1-i89bXCoaHl3FKfkZMouLABJHrs46mBYgFx5i8rVSAB-jM4YcBqAep67ECqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggyCIBhEAEYHzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WNvM983f55cDYAGxCZsAgyGRhPUvgAoBmAsByAsBogxEKgYKBPbysQJiFAoSY29tLmFsbWFuZWEuaW9zLnNhahwKGmNvbS5hbG1hbmVhLmlvcy5zYS5hbG1hbmVheAGIAQGQAQGqDQJTQcgNAeoNEwjirPjN3-eXAxUoVBwCHX_7DuWIDgnYEwOIFAPQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo0OTcwMjEyMjIxUAa6FwI4AaoYFwkAAAAAQOP3QBIKNDk3MDIxMjIyMRgBshgJEgKsURgBIgEA0BgB6BgBshkBN8IZAggB&gclid=EAIaIQobChMIran4zd_nlwMVKFQcAh1_-w7lEAEYASAAEgIMyfD_BwE&num=1&cid=CAQSnwIAQM4h3NeLaIYFeoYOKPGWL2FogYjSFlVAGzMNOBxmB2lJcbkUxT4xIc9SN2MoZdyRVCwZMYbGV6cRSoyOgHYm8Yf06wdA4T7cP5FzsVkT-Dckylx6PrpfM941jxbyIaGRjzDNKBI8ZHPjMDcpcTXIpzkwiizSJQXr0NmeBB3U-Ttg065motndFfnbQkTd_ifuaUy-i4HtZT9YtmBHmyAZvS6qDcbJCEmYT3wK2q-2xUppTzZaK0L9x9l3qAz7PehgvLd24ZyvECn_F_4daR4VjMOlgYXXeLsHrVdMvlGnhhuloca7Yu-APyCyAxeS-OGZmMfuHMsaP53rzhJTGUfyj7bWY9j3VMO0g8oW3N06hU08d9QE7PjZ4f72V3ThcxgB&sig=AOD64_06QAJMpQtcpepVhuUnW2ulnWimjA&rf=1&nb=7&adurl=https://www.almanea.sa/mega-sale-c-7665%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DAcquisit_Almanea_GDN_loc-SA_lan-AR_Central_Web%26utm_content%3DAcquisit_Almanea_GDN_loc-SA_lan-AR_Central_Web%26utm_term%3D%26gad_source%3D5%26gad_campaignid%3D22643936327
+            - generic [ref=f3e16]:
+              - generic "المنيع" [ref=f3e18]:
+                - link "المنيع" [ref=f3e19] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CKVYSb7Pnau21Nqio8cAP__a7qA6ll8nRigGxyJPWyxaIlPiHswIQASCVlJmjAWCrzfOF8B6gAYCznvgCyAEBqAMByAPLBKoEjgJP0HczpqiQDjEPr-XzVaqRncLfAY8ZX2DMBXqTW-4fc7BxMhbhJzkPbzcBGVDWd_PwZQiJQoGDt8m4aSLE5aCEp2a4UbzpE4gZW8KQ3PPC30Y0ZjntYzh0XPNh09m5_77jGb4xkYQKylQCM6KlgB_lLvefdUHJlwritpHh253DoKBfct8A5DzTeONZ8Gw6Znxgvm0l2Bw0s0VR91YMu9teJARz_LrsJddYVJG8PBG7-Gv7KQGA3-V8gL0A0rUNXoiZJlWp1NwAGrz2sgQXzICiIyCN5Hetffv9Sp65QyV6zP5BwcCWc3U1GyM3RlaEeh3c-uysFmzBjq2kRFhaY1-i89bXCoaHl3FKfkZMouLABJHrs46mBYgFx5i8rVSAB-jM4YcBqAep67ECqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggyCIBhEAEYHzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WNvM983f55cDYAGxCZsAgyGRhPUvgAoBmAsByAsBogxEKgYKBPbysQJiFAoSY29tLmFsbWFuZWEuaW9zLnNhahwKGmNvbS5hbG1hbmVhLmlvcy5zYS5hbG1hbmVheAGIAQGQAQGqDQJTQcgNAeoNEwjirPjN3-eXAxUoVBwCHX_7DuWIDgnYEwOIFAPQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo0OTcwMjEyMjIxUAa6FwI4AaoYFwkAAAAAQOP3QBIKNDk3MDIxMjIyMRgBshgJEgKsURgBIgEA0BgB6BgBshkBN8IZAggB&gclid=EAIaIQobChMIran4zd_nlwMVKFQcAh1_-w7lEAEYASAAEgIMyfD_BwE&num=1&cid=CAQSnwIAQM4h3NeLaIYFeoYOKPGWL2FogYjSFlVAGzMNOBxmB2lJcbkUxT4xIc9SN2MoZdyRVCwZMYbGV6cRSoyOgHYm8Yf06wdA4T7cP5FzsVkT-Dckylx6PrpfM941jxbyIaGRjzDNKBI8ZHPjMDcpcTXIpzkwiizSJQXr0NmeBB3U-Ttg065motndFfnbQkTd_ifuaUy-i4HtZT9YtmBHmyAZvS6qDcbJCEmYT3wK2q-2xUppTzZaK0L9x9l3qAz7PehgvLd24ZyvECn_F_4daR4VjMOlgYXXeLsHrVdMvlGnhhuloca7Yu-APyCyAxeS-OGZmMfuHMsaP53rzhJTGUfyj7bWY9j3VMO0g8oW3N06hU08d9QE7PjZ4f72V3ThcxgB&sig=AOD64_06QAJMpQtcpepVhuUnW2ulnWimjA&rf=1&nb=1&adurl=https://www.almanea.sa/mega-sale-c-7665%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DAcquisit_Almanea_GDN_loc-SA_lan-AR_Central_Web%26utm_content%3DAcquisit_Almanea_GDN_loc-SA_lan-AR_Central_Web%26utm_term%3D%26gad_source%3D5%26gad_campaignid%3D22643936327
+              - link "التسوق الآن" [ref=f3e22] [cursor=pointer]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CKVYSb7Pnau21Nqio8cAP__a7qA6ll8nRigGxyJPWyxaIlPiHswIQASCVlJmjAWCrzfOF8B6gAYCznvgCyAEBqAMByAPLBKoEjgJP0HczpqiQDjEPr-XzVaqRncLfAY8ZX2DMBXqTW-4fc7BxMhbhJzkPbzcBGVDWd_PwZQiJQoGDt8m4aSLE5aCEp2a4UbzpE4gZW8KQ3PPC30Y0ZjntYzh0XPNh09m5_77jGb4xkYQKylQCM6KlgB_lLvefdUHJlwritpHh253DoKBfct8A5DzTeONZ8Gw6Znxgvm0l2Bw0s0VR91YMu9teJARz_LrsJddYVJG8PBG7-Gv7KQGA3-V8gL0A0rUNXoiZJlWp1NwAGrz2sgQXzICiIyCN5Hetffv9Sp65QyV6zP5BwcCWc3U1GyM3RlaEeh3c-uysFmzBjq2kRFhaY1-i89bXCoaHl3FKfkZMouLABJHrs46mBYgFx5i8rVSAB-jM4YcBqAep67ECqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggyCIBhEAEYHzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WNvM983f55cDYAGxCZsAgyGRhPUvgAoBmAsByAsBogxEKgYKBPbysQJiFAoSY29tLmFsbWFuZWEuaW9zLnNhahwKGmNvbS5hbG1hbmVhLmlvcy5zYS5hbG1hbmVheAGIAQGQAQGqDQJTQcgNAeoNEwjirPjN3-eXAxUoVBwCHX_7DuWIDgnYEwOIFAPQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo0OTcwMjEyMjIxUAa6FwI4AaoYFwkAAAAAQOP3QBIKNDk3MDIxMjIyMRgBshgJEgKsURgBIgEA0BgB6BgBshkBN8IZAggB&gclid=EAIaIQobChMIran4zd_nlwMVKFQcAh1_-w7lEAEYASAAEgIMyfD_BwE&num=1&cid=CAQSnwIAQM4h3NeLaIYFeoYOKPGWL2FogYjSFlVAGzMNOBxmB2lJcbkUxT4xIc9SN2MoZdyRVCwZMYbGV6cRSoyOgHYm8Yf06wdA4T7cP5FzsVkT-Dckylx6PrpfM941jxbyIaGRjzDNKBI8ZHPjMDcpcTXIpzkwiizSJQXr0NmeBB3U-Ttg065motndFfnbQkTd_ifuaUy-i4HtZT9YtmBHmyAZvS6qDcbJCEmYT3wK2q-2xUppTzZaK0L9x9l3qAz7PehgvLd24ZyvECn_F_4daR4VjMOlgYXXeLsHrVdMvlGnhhuloca7Yu-APyCyAxeS-OGZmMfuHMsaP53rzhJTGUfyj7bWY9j3VMO0g8oW3N06hU08d9QE7PjZ4f72V3ThcxgB&sig=AOD64_06QAJMpQtcpepVhuUnW2ulnWimjA&rf=1&nb=8&adurl=https://www.almanea.sa/mega-sale-c-7665%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DAcquisit_Almanea_GDN_loc-SA_lan-AR_Central_Web%26utm_content%3DAcquisit_Almanea_GDN_loc-SA_lan-AR_Central_Web%26utm_term%3D%26gad_source%3D5%26gad_campaignid%3D22643936327
+          - generic [ref=f3e29] [cursor=pointer]
+          - button [ref=f3e34] [cursor=pointer]
+          - iframe
+    - paragraph [ref=e37]:
+      - text: Do you enjoy this platform? ❤️
+      - link "Buy us a coffee" [ref=e38] [cursor=pointer]:
+        - /url: https://www.buymeacoffee.com/expandtesting
+    - generic [ref=e39]:
+      - insertion [ref=e41]:
+        - generic [ref=e44]:
+          - heading "These are topics related to the article that might interest you" [level=2] [ref=e46]: Discover more
+          - link "Try Dev Tools" [ref=e47] [cursor=pointer]
+          - link "Browse Reference" [ref=e52] [cursor=pointer]
+          - link "Secure Networks" [ref=e57] [cursor=pointer]
+          - link "Audit Security" [ref=e62] [cursor=pointer]
+          - link "Source Robotics" [ref=e67] [cursor=pointer]
+          - link "Clean Your PC" [ref=e72] [cursor=pointer]
+          - link "Upgrade Network" [ref=e77] [cursor=pointer]
+          - link "Find Tech Guides" [ref=e82] [cursor=pointer]
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - navigation "breadcrumb mb-2" [ref=e90]:
+            - list [ref=e91]:
+              - listitem [ref=e92]:
+                - link "Home" [ref=e93]:
+                  - /url: /
+              - listitem [ref=e94]: / Login Page
+          - heading "Test Login page for Automation Testing Practice" [level=1] [ref=e95]
+          - generic [ref=e97]:
+            - paragraph [ref=e98]: This Test Login page is designed for automation testing practice. Test various positive and negative login scenarios in a testing environment.
+            - paragraph [ref=e99]:
+              - text: You can use this login page for practicing with Selenium or other tools like Playwright, Cypress, etc.
+              - link "Browse Reference" [ref=e100] [cursor=pointer]
+            - paragraph [ref=e104]:
+              - text: Register
+              - link "here" [ref=e105]:
+                - /url: /register
+              - text: "or Log in to the secure area with these credentials:"
+            - list [ref=e106]:
+              - listitem [ref=e107]: "Username: practice"
+              - listitem [ref=e108]: "Password: SuperSecretPassword!"
+            - paragraph
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: Username
+                - textbox "Username" [ref=e117]: practice
+              - generic [ref=e118]:
+                - generic [ref=e119]: Password
+                - textbox "Password" [active] [ref=e120]: SuperSecretPword!
+            - button "Login" [ref=e121] [cursor=pointer]
+          - generic [ref=e122]:
+            - heading "How to test the login page?" [level=2] [ref=e123]
+            - generic [ref=e124]:
+              - paragraph [ref=e125]:
+                - text: If the credentials are correct, you should see a welcome message; otherwise, you will see an error message.
+                - link "Try Dev Tools" [ref=e126] [cursor=pointer]
+              - insertion [ref=e131]:
+                - generic "These are topics related to the article that might interest you" [ref=e133]: Discover more
+              - paragraph [ref=e134]: The login feature is essential for secure websites and is commonly used. Automating the testing of various login scenarios, including different edge cases, is crucial to ensure reliability and security.
+              - heading "How Does Form-Based Authentication Work?" [level=3] [ref=e135]
+              - paragraph [ref=e136]: "Take a look at this diagram and review the different steps:"
+              - img "How Does Form-Based Authentication Work" [ref=e137]
+              - list [ref=e138]:
+                - listitem [ref=e139]: "Step 1: A client requests access to a protected resource"
+                - listitem [ref=e140]: "Step 2: If the client is unauthenticated, the server redirects the client to a login page"
+                - listitem [ref=e141]: "Step 3: The client submits the login form to the server"
+                - listitem [ref=e142]: "Step 4: If the login succeeds, the server redirects the client to the resource. If the login fails, the client is redirected to an error page"
+        - generic [ref=e144]:
+          - heading "Login Automation Test Cases" [level=2] [ref=e145]
+          - insertion [ref=e147]:
+            - generic "These are topics related to the article that might interest you" [ref=e149]: Discover more
+          - paragraph [ref=e150]:
+            - text: Below are the test cases for the login page. These test cases cover both positive and negative scenarios to ensure comprehensive testing of the login functionality.
+            - link "Cypress testing course" [ref=e151] [cursor=pointer]
+          - paragraph [ref=e155]:
+            - text: To perform these tests, please navigate to this
+            - link "page" [ref=e156]:
+              - /url: /login
+          - heading "Login Automation Test Cases" [level=2] [ref=e157]
+          - 'heading "Test Case 1: Successful Login" [level=3] [ref=e158]'
+          - list [ref=e159]:
+            - listitem [ref=e160]: Launch the browser.
+            - listitem [ref=e161]:
+              - text: Navigate to the
+              - link "login" [ref=e162]:
+                - /url: /login
+              - text: page URL.
+            - listitem [ref=e163]: Verify that the login page is displayed successfully.
+            - listitem [ref=e164]:
+              - text: Enter
+              - strong [ref=e165]: Username
+              - text: ":"
+              - code [ref=e166]: practice
+              - text: .
+            - listitem [ref=e167]:
+              - text: Enter
+              - strong [ref=e168]: Password
+              - text: ":"
+              - code [ref=e169]: SuperSecretPassword!
+              - text: .
+            - listitem [ref=e170]:
+              - text: Click the
+              - strong [ref=e171]: Login
+              - text: button.
+            - listitem [ref=e172]:
+              - text: Verify that the user is redirected to the
+              - code [ref=e173]: /secure
+              - text: page.
+            - listitem [ref=e174]: Confirm the success message "You logged into a secure area!" is visible.
+            - listitem [ref=e175]:
+              - text: Verify that a
+              - strong [ref=e176]: Logout
+              - text: button is displayed.
+          - separator [ref=e177]
+          - 'heading "Test Case 2: Invalid Username" [level=3] [ref=e178]'
+          - list [ref=e179]:
+            - listitem [ref=e180]: Launch the browser.
+            - listitem [ref=e181]: Navigate to the login page URL.
+            - listitem [ref=e182]: Verify that the login page is displayed successfully.
+            - listitem [ref=e183]:
+              - text: Enter an incorrect
+              - strong [ref=e184]: Username
+              - text: (e.g.,
+              - code [ref=e185]: wrongUser
+              - text: ).
+            - listitem [ref=e186]:
+              - text: Enter
+              - strong [ref=e187]: Password
+              - text: ":"
+              - code [ref=e188]: SuperSecretPassword!
+              - text: .
+            - listitem [ref=e189]:
+              - text: Click the
+              - strong [ref=e190]: Login
+              - text: button.
+            - listitem [ref=e191]: Verify that an error message "Invalid username." is displayed.
+            - listitem [ref=e192]: Ensure the user remains on the login page.
+          - separator [ref=e193]
+          - 'heading "Test Case 3: Invalid Password" [level=3] [ref=e194]'
+          - list [ref=e195]:
+            - listitem [ref=e196]: Launch the browser.
+            - listitem [ref=e197]: Navigate to the login page URL.
+            - listitem [ref=e198]: Verify that the login page is displayed successfully.
+            - listitem [ref=e199]:
+              - text: Enter
+              - strong [ref=e200]: Username
+              - text: ":"
+              - code [ref=e201]: practice
+              - text: .
+            - listitem [ref=e202]:
+              - text: Enter an incorrect
+              - strong [ref=e203]: Password
+              - text: (e.g.,
+              - code [ref=e204]: WrongPassword
+              - text: ).
+            - listitem [ref=e205]:
+              - text: Click the
+              - strong [ref=e206]: Login
+              - text: button.
+            - listitem [ref=e207]: Verify that an error message "Invalid password." is displayed.
+            - listitem [ref=e208]: Ensure the user remains on the login page.
+    - insertion [ref=e210]:
+      - iframe [ref=e212]:
+        - iframe [ref=f5e1]:
+          - generic:
+            - generic [ref=f6e1]:
+              - generic [ref=f6e2]:
+                - generic:
+                  - generic [ref=f6e3] [cursor=pointer]
+                  - button [ref=f6e8] [cursor=pointer]
+              - insertion [ref=f6e16]:
+                - generic [ref=f6e17]:
+                  - link [ref=f6e18] [cursor=pointer]:
+                    - /url: https://googleads.g.doubleclick.net/dbm/clk?sa=L&ai=CcXXKb7PnaoTbNpPh4MsPr9vhkQPepO_WhwGIiari6xSYkviHswIQASCVlJmjAWCrzfOF8B6gAZ7Hms8-yAEJqAMByAObBKoEpAJP0NZRLeGLM-TbaayOatwjxptPs-ynvFsXrfzZLHTuCOzGZAybVLhtckaxAfkdQFbIzAwq9slSWQexljdf5Gg1u8qIHvt7GPm3KxaO0Sa-7ffOEp8krGavWeQDRiHDmGegzRFTSytM-Fic9m3SDjFw8Hs_96ghpaYAF58mikNHA5wzw358xeqreg20w7iJwMJmY21BbpczepgXqZnTsaGeLiFjX-IcSpN51VLvfzomWjpUCvBgWDJtr_fZVLson45PJEG-OHNol7sip-IKAWMBSj-sAe9vXInn3L6k5TBsG4-mkv2Cy_5P5xDco4ZlWBG5Dx4QV8lGhtZFQp78SnHP0ohRLHDfYXE7sqd9-uNm8QXkZP1QNR7oHwoGVIlFT4spLHJCwASogo3nqgXgBAOIBfvWr4JVkAYBoAZNgAee_-quGagHqeuxAqgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgHpuuxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAqgH59exAtgHANIIMgiAYRABGB8yCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBhIvf3BOljf0ffN3-eXA2ABgAoBmAsByAsBgAwBogwIKgYKBPbysQKqDQJTQeoNEwjN0fjN3-eXAxWTMHgDHa9tODLwDQGIDgmwE_-aoybQEwDYEw3YFAHQFQHKFgIKAPgWAYAXAbIXEBgCKgoyNDA2MzM1NzQzUAaqGBcJAAAAAACg_UASCjI0MDYzMzU3NDMYAbIYCRICnWMYTSIBANAZAdgZAQ&ae=1&num=1&cid=CAQSnwIAQM4h3OeRD57NURaVS-7ZJf7ayJyBkIrD_vkg7b1jOxSUFDSb0FulD0GbOltohI9_lpiLs4PEUCfQIC0MNiVSYfxmQLRwYTgt23e5Kzv6ffuM7E04lo-L6tLlOYPZszxVcqpSSTTh5N0Kjr4EsmJ-ZDstsV4K2-NdRNJM2dLg1QMzTflAvRP1xuaesKRnI5eZiUt7QoyRho9w8hpnrqeEFEB3q5Ri1MeVpcDaV1_44c3hiV2q_cTeLpcD0ZdFfx2FyTl7vClkd8wDnSkxdu39ffx8VWyja-BUUvegzrhJUNIrAlgOJzJK8RnMTZ8b8IWy7ky2y1psOdeFx1RxxRfkEcgqyGC2MKsUrUSRuhUR5nDHdlQ79DOuuPqzWoBCyRgB&sig=AOD64_3eM0ypSqvxIfxmvf4ts0QJKhLxtg&dbm_c=AKAmf-CHJSgwqIa0unqXmd7cXaNctgahTLRMOxTMaQ6XiylwVK612m4ZPseAl8ssMvES9wG9wGuhpCda7UCdzO4WtWEHUQoR3L-Qwm_UOaT5olvAO_EFfSPdWlnrRpovxa68vBb9IxEtOs5ZDyE5LQUAZeGrPTqKWcnFnlG6NLSNg_kVXO4C8jhEMOte1qi6e_XqP6m9xiJz6jzkDsVZgf51VM9cCr4qiP4JmHkwMcU68XhH7m6tJWnw_oHQ6K-fOxIDEBkEshXfMnWd-9vmn9reMC_cP8IAgjYqj7NzYmPwicMRPlEHsZEq2_GcmUfBQCbXUa3GA3cd&cry=1&dbm_d=AKAmf-D-Es0uqmR2tQMbf6Esxh1r6hZF2jjVTnnGfDrcAWFwRA8MsV6eOPt1bfRPPxTAPiBpxk0Vu9ySngmD4lFS39nGj41QAhLV7dEmBTtMDHkHWhnLR6wtE7sIKamlSlzE0U0SSizwxRuN8Z9NiihQmlpyX_pTA_AvedKydBrjfYeAeQrlAw24SXfNz0_XN6XTa4LgGYwWJaSJ6pcIpbme1FcYP-65qfcQAIQMnxLW4l-GCek-oVTKLwHltCB2EWssR_lr5hFigVTUg8-_aJUFRLJUlMQxhpT6OjBHDajti1iSIom462e6JZsncLhCQ8srZ_mOzx6JgReuAOWwjGdfnhXTDc9Yt6MoZgzrp4m2AXLvVCqeGzJqkzL_ockdO0WcqVtO35C3mhJWeGBrXWQLZ6Avo2MWVzzWiqMg3tkYKZrIzJfcxUI_ZvX6oRTiWh348qQystouq0jzKUCfeBohFQE5Vg_w_K8bX9kf8TyetvZKlsid2hc1sLE6kv2fXsM8bjcpZYUx1kdpRL1So583rgXiJbkjDeyJTV_XI_adv1tJTEHPW7FR6m4p-o0QUZ9T0v4kIkaTjmbBVZrZ45xSZvp7j3vppHpSj1Uc7vhg9tpyedEC3il65WhqbeKMcK3crHrXTH4B5Nxx33eMN5Rh1old4RQ4A7_JHmdNbRLiuzfCwcsEYZACblZfagRdI3-ovkavrRNe68GwNTpMwketrSxvFR6-djxbNfqYeLBioK8qDI67bl0DkYYuOlfb_5d9_wWdLxkG&adurl=https://servedby.flashtalking.com/click/1/275018;9762682;4762577;211;0/?us_privacy=!!US_PRIVACY!&ft_partnerimpid=ABAjH0g5Rifi-IGOM-61ZcnQjpGq&ft_impID=03A60814-F6F7-DBA0-EA4D-A1E51745E4B6&g=68797FB2BAE4CC&random=26714.602173097355&ft_width=160&ft_height=600&url=https://www.adobe.com/acrobat/free-trial-download.html?sdid=91BF4QZZ&mv=display&mv2=display
+                  - iframe [ref=f6e19]
+                  - link [ref=f6e21]:
+                    - /url: https://www.flashtalking.com/consumer-privacy
+                    - img "AdChoices arrow" [ref=f6e22]
+                  - link "Privacy Notification" [ref=f6e24]:
+                    - /url: https://www.flashtalking.com/consumer-privacy
+                  - link "Privacy Notification" [ref=f6e27]:
+                    - /url: https://www.flashtalking.com/consumer-privacy
+            - iframe
+  - insertion [ref=e214]:
+    - generic "These are topics related to the article that might interest you" [ref=e216]: Discover more
+  - contentinfo [ref=e217]:
+    - generic [ref=e222]:
+      - heading "Practice Test Automation WebSite for Web UI and Rest API" [level=4] [ref=e223]
+      - paragraph [ref=e224]:
+        - text: "Version: e64cd80e | Copyright"
+        - link "Expand Testing" [ref=e225]:
+          - /url: https://expandtesting.com/
+        - text: "2026"
+  - generic [ref=e226] [cursor=pointer]
+```

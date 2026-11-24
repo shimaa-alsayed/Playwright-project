@@ -1,0 +1,4 @@
+this actions run before all tests
+Start test: Valid login
+finish test: Valid login
+this actions run after all tests

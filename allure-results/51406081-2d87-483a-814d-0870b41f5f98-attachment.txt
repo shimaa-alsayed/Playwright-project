@@ -1,0 +1,3 @@
+this actions run before all tests
+Start test: Valid login
+finish test: Valid login

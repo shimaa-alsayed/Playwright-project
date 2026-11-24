@@ -1,0 +1,892 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/FirstScript.spec.ts"
+    ],
+    "configFile": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\playwright.config.ts",
+    "rootDir": "C:/Users/shima/Desktop/PlaywriteFramework/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/shima/Desktop/PlaywriteFramework/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/shima/Desktop/PlaywriteFramework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shima/Desktop/PlaywriteFramework/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/shima/Desktop/PlaywriteFramework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shima/Desktop/PlaywriteFramework/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/shima/Desktop/PlaywriteFramework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests",
+        "snapshotDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "screenshot": "on",
+          "headless": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "name": "firefox",
+        "testDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests",
+        "snapshotDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "screenshot": "on",
+          "headless": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox",
+          "video": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "name": "webkit",
+        "testDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests",
+        "snapshotDir": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "screenshot": "on",
+          "headless": true,
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "FirstScript.spec.ts",
+      "file": "FirstScript.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "login test",
+          "file": "FirstScript.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Vaild login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14253,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:12:56.781Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "${testinfo:title }",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Vaild-login-chromium\\attachments\\-testinfo-title--6b9144cb1e1228b9317accd95fceff371b7dddbf.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Vaild-login-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-0c82005b558c9895b99d",
+              "file": "FirstScript.spec.ts",
+              "line": 4,
+              "column": 8
+            },
+            {
+              "title": "Invaild login",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 23423,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    12 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m       - unexpected value \"Your password is invalid!\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    12 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m       - unexpected value \"Your password is invalid!\"\u001b[22m\n\n    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53",
+                        "location": {
+                          "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                          "column": 53,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "column": 53,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    12 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m       - unexpected value \"Your password is invalid!\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:12:56.848Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                        "column": 53,
+                        "line": 23
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 21494,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    8 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    8 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n\n    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53",
+                        "location": {
+                          "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                          "column": 53,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "column": 53,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    8 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-01T22:13:30.379Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                        "column": 53,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-4c480e1397a4a5531021",
+              "file": "FirstScript.spec.ts",
+              "line": 17,
+              "column": 5
+            },
+            {
+              "title": "Skipped Invaild login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                        "line": 27,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:12:56.106Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "line": 27,
+                            "column": 6
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-98dafacd46e9c0e981d0",
+              "file": "FirstScript.spec.ts",
+              "line": 27,
+              "column": 6
+            },
+            {
+              "title": "Vaild login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 27250,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:12:56.792Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "${testinfo:title }",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Vaild-login-firefox\\attachments\\-testinfo-title--6b9144cb1e1228b9317accd95fceff371b7dddbf.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Vaild-login-firefox\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-ba4e86d1e3e2de81cff0",
+              "file": "FirstScript.spec.ts",
+              "line": 4,
+              "column": 8
+            },
+            {
+              "title": "Invaild login",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 4,
+                      "status": "timedOut",
+                      "duration": 39845,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "column": 53,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    8 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n\u001b[2m  - Test timeout of 30000ms exceeded.\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:12:56.911Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-firefox\\error-context.md"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 18680,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    9 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    9 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n\n    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53",
+                        "location": {
+                          "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                          "column": 53,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "column": 53,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    9 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-01T22:13:41.016Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-firefox-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-firefox-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-firefox-retry1\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                        "column": 53,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-6a916ba0748f34742cdb",
+              "file": "FirstScript.spec.ts",
+              "line": 17,
+              "column": 5
+            },
+            {
+              "title": "Skipped Invaild login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                        "line": 27,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:12:56.116Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "line": 27,
+                            "column": 6
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-daab7b2b2271f306bf43",
+              "file": "FirstScript.spec.ts",
+              "line": 27,
+              "column": 6
+            },
+            {
+              "title": "Vaild login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 34638,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:12:56.765Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "${testinfo:title }",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Vaild-login-webkit\\attachments\\-testinfo-title--6b9144cb1e1228b9317accd95fceff371b7dddbf.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-71f3a12da1ebc46ae703",
+              "file": "FirstScript.spec.ts",
+              "line": 4,
+              "column": 8
+            },
+            {
+              "title": "Invaild login",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 30086,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    - waiting for \"https://practice.expandtesting.com/authenticate\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://practice.expandtesting.com/login\"\u001b[22m\n\u001b[2m    6 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    - waiting for \"https://practice.expandtesting.com/authenticate\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://practice.expandtesting.com/login\"\u001b[22m\n\u001b[2m    6 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n\n    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53",
+                        "location": {
+                          "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                          "column": 53,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "column": 53,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    - waiting for \"https://practice.expandtesting.com/authenticate\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://practice.expandtesting.com/login\"\u001b[22m\n\u001b[2m    6 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:12:56.862Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-webkit\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                        "column": 53,
+                        "line": 23
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 33533,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "column": 53,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('div[id=\\'flash\\'] b')\nExpected substring: \u001b[32m\"Your \u001b[7mused \u001b[27mpassword is invalid!\"\u001b[39m\nReceived string:    \u001b[31m\"Your password is invalid!\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('div[id=\\'flash\\'] b') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div[id=\\'flash\\'] b')\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://practice.expandtesting.com/login\"\u001b[22m\n\u001b[2m    2 × locator resolved to <b>Your password is invalid!</b>\u001b[22m\n\u001b[2m      - unexpected value \"Your password is invalid!\"\u001b[22m\n\u001b[2m  - Test timeout of 30000ms exceeded.\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"SuperSecretPword!\"\u001b[39m)\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@id='submit-login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div[id='flash'] b\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Your used password is invalid!\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m  \n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts:23:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-11-01T22:13:30.758Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-webkit-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\test-results\\FirstScript-login-test-Invaild-login-webkit-retry1\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-fb321a4a0366bf5975cf",
+              "file": "FirstScript.spec.ts",
+              "line": 17,
+              "column": 5
+            },
+            {
+              "title": "Skipped Invaild login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                        "line": 27,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-01T22:13:12.711Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\Users\\shima\\Desktop\\PlaywriteFramework\\tests\\FirstScript.spec.ts",
+                            "line": 27,
+                            "column": 6
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1184a7f646817c999bcf-e3e167d8c4c3c51e4fc6",
+              "file": "FirstScript.spec.ts",
+              "line": 27,
+              "column": 6
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-01T22:12:56.063Z",
+    "duration": 68845.73800000001,
+    "expected": 3,
+    "skipped": 3,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
