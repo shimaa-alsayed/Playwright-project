@@ -11,8 +11,8 @@ test.describe('login test  @ft', ()=>{
     await page.goto('https://practice.expandtesting.com/login');
     await page.locator("//input[@id='username']").fill("practice")
     await page.locator("//input[@id='password']").fill("SuperSecretPassword!")
-    await page.screenshot({path: 'screenshots/Login.png'})
-    testinfo.attach('${testinfo:title }', {path: 'screenshots/Login.png'})
+    //await page.screenshot({path: 'screenshots/Login.png'})
+    //testinfo.attach('${testinfo:title }', {path: 'screenshots/Login.png'})
     await page.locator("//button[@id='submit-login']").click()
     await expect(page.locator("div[id='flash'] b")).toContainText("You logged into a secure area!")
 });
