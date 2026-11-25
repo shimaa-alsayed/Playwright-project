@@ -4,9 +4,10 @@ import getEnvironment from '../../utils/setup/envSetup';
 
 
 test.describe('login test  @ft', ()=>{
+    getEnvironment();
+
    test('Vaild login', async ({page}, testinfo)=> {
 
-    getEnvironment();
     await page.goto('https://practice.expandtesting.com/login');
     await page.locator("//input[@id='username']").fill("practice")
     await page.locator("//input[@id='password']").fill("SuperSecretPassword!")
@@ -21,7 +22,6 @@ test.describe('login test  @ft', ()=>{
 test('Invaild login', async ({page})=> {
 
     await page.goto('/login');
-    await page.locator("#username").fill("practice")
     await page.locator("#password").fill("SuperSecretPword!")
     await page.locator("//button[@id='submit-login']").click()
     await expect(page.locator("div[id='flash'] b")).toContainText("Your password is invalid!")
