@@ -4,7 +4,7 @@ import getEnvironment from '../../utils/setup/envSetup';
 
 
 test.describe('login test  @ft', ()=>{
-   test.only('Vaild login', async ({page}, testinfo)=> {
+   test('Vaild login', async ({page}, testinfo)=> {
 
     getEnvironment();
     await page.goto('https://practice.expandtesting.com/login');
