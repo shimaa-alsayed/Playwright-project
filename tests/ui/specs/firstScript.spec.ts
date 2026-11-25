@@ -19,23 +19,23 @@ test.describe('login test  @ft', ()=>{
 
 
 
-test('Invaild login', async ({page})=> {
+// test.skip('Invaild login', async ({page})=> {
 
-    await page.goto('/login');
-    await page.locator("#password").fill("SuperSecretPword!")
-    await page.locator("//button[@id='submit-login']").click()
-    await expect(page.locator("div[id='flash'] b")).toContainText("Your password is invalid!")
-});
- 
-
-// test.skip('Skipped Invaild login', async ({page})=> {
-
-//     await page.goto('https://practice.expandtesting.com/login');
-//     await page.locator("//input[@id='username']").fill("practice")
-//     await page.locator("//input[@id='password']").fill("SuperSecretPword!")
+//     await page.goto('/login');
+//     await page.locator("#password").fill("SuperSecretPword!")
 //     await page.locator("//button[@id='submit-login']").click()
 //     await expect(page.locator("div[id='flash'] b")).toContainText("Your password is invalid!")
 // });
+ 
+
+test('Invaild login', async ({page})=> {
+
+    await page.goto('https://practice.expandtesting.com/login');
+    await page.locator("//input[@id='username']").fill("practice")
+    await page.locator("//input[@id='password']").fill("SuperSecretPword!")
+    await page.locator("//button[@id='submit-login']").click()
+    await expect(page.locator("div[id='flash'] b")).toContainText("Your password is invalid!")
+});
  
 
 
